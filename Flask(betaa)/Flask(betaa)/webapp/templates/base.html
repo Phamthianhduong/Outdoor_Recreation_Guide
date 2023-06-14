@@ -1,0 +1,34 @@
+
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block head %}
+{{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% endblock%}
+
+{% block navbar %}
+    <div class="navbar">
+        <a href = "#" class = "logo">DUONG</a>
+        <nav>
+            <ul class="navlink">
+                <li><a href="#">Home</a></li>
+        
+            </ul>
+                 
+        </nav>
+        <a class = "btn" href="{{ url_for('main.login_with_google') }}"><button>Login</button></a> 
+    </div>
+{% endblock%}
+
+{% block content %}
+<div class="banner">
+    <div class="content">
+        <h3> Outdoor Recreation Guide </h3>
+        <p>Travel around the world</p>
+        
+    </div>
+
+</div>
+{% endblock%}

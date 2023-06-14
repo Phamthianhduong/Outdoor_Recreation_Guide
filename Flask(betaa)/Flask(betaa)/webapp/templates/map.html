@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Include Google Maps JS API-->
+    <!--<script type="text/javascript" scr="https://maps.googleapis.com/maps/api/js?callback=init_map" async defer></script> -->
+    {{map.js}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body> 
+
+        <a href="https://cloud.google.com/maps-platform/?apis=maps">https://cloud.google.com/maps-platform/?apis=maps</a>
+        <form action="." method="GET">
+            <input type="text" name="apikey" id="apikey"/><input type="submit" value="load"/>
+        </form>
+        <hr>
+        {{ map.html }}
+    
+</body> 
+</html>

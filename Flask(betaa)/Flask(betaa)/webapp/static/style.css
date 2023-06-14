@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+li, a, button {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+}
+.navlink{
+    list-style: none;
+}
+.navlink li{
+    display:inline-block ;
+    padding: 0px 20px;
+}
+.navlink li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navlink li a :hover{
+    color: antiquewhite;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0);
+}
+
+.banner{
+    width: 1600px;
+    height: 700px;
+    background: url(../static/img/home.jpg) no-repeat;
+    background-size:cover ;
+    background-position: center;
+    padding-left: 8px;
+}
+.banner .content{
+    width:50rem;
+    text-align: center;
+
+}
+
+.banner .content h3{
+    font-size: 7rem;
+    color:#faf9f9;
+    font-family: 'Balsamiq Sans', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .content p{
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-160%, -50%);
+    color: #faf9f9;
+    font-size: 3rem;
+}
